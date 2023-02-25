@@ -1,0 +1,40 @@
+<div class="container mx-auto px-5">
+  <div class="flex flex-wrap">
+    {{ range (where .Site.Pages "Section" "product") }} {{ range .Pages }}
+    <a href="{{ .Permalink }}">
+      <div class="p-4 md:w-1/2 xl:w-1/4">
+        <div class="h-full rounded-lg border p-6 shadow-md">
+          <img
+            alt="feature"
+            class="mx-auto mb-2 h-12"
+            src="{{ .Params.image }}"
+          />
+          <h2
+            class="title-font mb-2 text-center text-lg font-medium text-gray-900"
+          >
+            {{ .Title }}
+          </h2>
+          <p class="text-base leading-relaxed">{{ .Description }}</p>
+
+          <a
+            href="{{ .Permalink }}"
+            class="mt-3 inline-flex items-center text-indigo-500"
+            >Mehr erfahren
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="ml-2 h-4 w-4"
+              viewBox="0 0 24 24"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </a>
+    {{ end }} {{ end }}
+  </div>
+</div>

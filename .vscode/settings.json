@@ -1,0 +1,11 @@
+{
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": ".*",
+                "isAsync": false,
+                "cmd": "cd  ./site/themes/tailwind/ && npm run build-tw"
+            }           
+        ]
+    }
+}
