@@ -1,6 +1,6 @@
 [build]
-  publish = "public"
-  command = "cd ./site/themes/tailwind/ && npm run build-tw && cd ../../ && hugo --gc --minify"
+  publish = "./build/hugo/publish"
+  command = "./gradlew hugoBuild"
 
 [build.environment]
   HUGO_VERSION = "0.101.0"
