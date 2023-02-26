@@ -7,6 +7,17 @@ theme = 'tailwind'
 unsafe = true
 
 [[menu.main]]
-url = "/impressum"
-name = "Impressum"
+url = "/page1"
+name = "Page 1"
 weight = 1
+
+[[menu.main]]
+url = "/page2"
+name = "Page 2"
+weight = 2
+
+[[menu.main]]
+url = "/blog"
+name = "Blog"
+weight = 3
+

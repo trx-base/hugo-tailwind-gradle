@@ -11,11 +11,11 @@
     <nav
       class="flex flex-wrap items-center justify-center text-base md:ml-auto md:mr-auto"
     >
-      <a class="mr-5 hover:text-gray-900">First Link</a>
-      <a class="mr-5 hover:text-gray-900">Second Link</a>
-      <a class="mr-5 hover:text-gray-900">Third Link</a>
-      <a class="mr-5 hover:text-gray-900">Fourth Link</a>
+      {{ if .Site.Menus.main }} {{ range sort .Site.Menus.main }}
+      <a href="{{ .URL }}" class="mr-5 hover:text-gray-900">{{ .Name }}</a>
+      {{ end }} {{ end }}
     </nav>
+
     <button
       class="mt-4 inline-flex items-center rounded border-0 bg-gray-100 py-1 px-3 text-base hover:bg-gray-200 focus:outline-none md:mt-0"
     >
@@ -33,4 +33,5 @@
       </svg>
     </button>
   </div>
+  <hr/>
 </header>
