@@ -1,0 +1,8 @@
+[build]
+  publish = "./site/public"
+  command = "cd ./site/themes/tailwind/ && npm install && npm run build-tw && cd ../../ && hugo --gc --minify"
+
+[build.environment]
+  HUGO_VERSION = "0.101.0"
+
+

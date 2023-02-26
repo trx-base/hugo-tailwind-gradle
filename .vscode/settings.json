@@ -7,5 +7,6 @@
                 "cmd": "cd  ./site/themes/tailwind/ && npm run build-tw"
             }           
         ]
-    }
+    },
+    "java.configuration.updateBuildConfiguration": "automatic"
 }

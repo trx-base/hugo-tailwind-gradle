@@ -1,4 +1,4 @@
-baseURL = 'https://hugodemo.trxbroker.at/'
+baseURL = 'https://hugodemo.trx-base.com/'
 languageCode = 'de-DE'
 title = 'Hugo Demo with Tailwind Theme'
 theme = 'tailwind'

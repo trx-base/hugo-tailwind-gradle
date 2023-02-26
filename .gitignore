@@ -55,3 +55,6 @@ build
 
 # docker-compose
 .env
+
+# Hugo generated
+site/public
