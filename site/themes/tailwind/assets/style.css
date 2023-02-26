@@ -1389,10 +1389,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:ml-auto {
-    margin-left: auto;
-  }
-
   .sm\:mt-0 {
     margin-top: 0px;
   }
