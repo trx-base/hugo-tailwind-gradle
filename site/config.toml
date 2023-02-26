@@ -17,7 +17,7 @@ name = "Contact"
 weight = 2
 
 [[menu.main]]
-url = "/blog"
+url = "/blog/"
 name = "Blog"
 weight = 3
 

@@ -4,6 +4,9 @@
   <section class="pt-20 pb-4">
     <div class="flex w-full flex-col text-center">
       <h1 class="">{{ .Title }}</h1>
+      <p class="mx-auto text-base font-thin leading-relaxed lg:w-2/3">
+        {{ .Description }}
+      </p>
     </div>
   </section>
   <div class="px-5">{{ .Content }}</div>
@@ -28,7 +31,7 @@
           <a
             href="{{ .Permalink }}"
             class="mt-4 inline-flex items-center text-indigo-500"
-            >Mehr erfahren
+            >Lern more
             <svg
               class="ml-2 h-4 w-4"
               viewBox="0 0 24 24"
