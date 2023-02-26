@@ -8,9 +8,8 @@
     >
       <img src="/images/hugo-tailwind-logo.svg" class="h-14 w-auto" />
     </a>
-    <nav
-      class="flex flex-wrap items-center justify-center text-base md:ml-auto md:mr-auto"
-    >
+
+    <nav class="mx-auto flex flex-wrap items-center justify-center text-base">
       {{ if .Site.Menus.main }} {{ range sort .Site.Menus.main }}
       <a href="{{ .URL }}" class="mr-5 hover:text-gray-900">{{ .Name }}</a>
       {{ end }} {{ end }}

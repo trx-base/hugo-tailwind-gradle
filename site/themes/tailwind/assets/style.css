@@ -1520,12 +1520,34 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:ml-4 {
+    margin-left: 1rem;
+  }
+
   .sm\:mt-0 {
     margin-top: 0px;
   }
 
   .sm\:justify-start {
     justify-content: flex-start;
+  }
+
+  .sm\:border-l-2 {
+    border-left-width: 2px;
+  }
+
+  .sm\:border-gray-200 {
+    --tw-border-opacity: 1;
+    border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  }
+
+  .sm\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .sm\:pl-4 {
+    padding-left: 1rem;
   }
 
   .sm\:text-4xl {
