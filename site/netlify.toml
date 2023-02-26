@@ -1,0 +1,18 @@
+[build]
+  command = "cd ./site/ && hugo --gc --minify"
+  functions = "netlify/functions"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.101.0"
+
+[[plugins]]
+  package = "netlify-plugin-cypress"
+
+  [plugins.inputs.postBuild]
+    enable = true
+
+  [plugins.inputs]
+    enable = false
+
+
